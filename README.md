@@ -22,6 +22,8 @@ sass, bem, webpack, docker, node.js, express
 
 `npm start`
 
+Сервер запустился на порту 3000...
+
 ## Сборка в Docker
 
 #### Создаем image
