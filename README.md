@@ -28,7 +28,7 @@ sass, bem, webpack, docker, node.js, express
 
 #### Создаем image
 
-`docker buils -t sass .`
+`docker build -t sass .`
 
 #### Создаем и запускаем контейнер
 
