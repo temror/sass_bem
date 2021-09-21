@@ -33,3 +33,11 @@ sass, bem, webpack, docker, node.js, express
 #### Создаем и запускаем контейнер
 
 `docker run -d -p 3000:3000 --rm --name sass sass`
+
+#### Остановить контейнер
+
+`docker stop sass`
+
+#### Удалить image
+
+`docker rmi sass`
