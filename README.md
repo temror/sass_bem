@@ -30,7 +30,7 @@ sass, bem, webpack, docker, node.js, express
 
 `docker build -t sass .`
 
-#### Создаем и запускаем контейнер
+#### Создаем и запускаем контейнер на порту 3000...
 
 `docker run -d -p 3000:3000 --rm --name sass sass`
 
