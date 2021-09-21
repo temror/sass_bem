@@ -1,0 +1,193 @@
+$normal: 10px;
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nav {
+  background-color: coral;
+  margin: 0 auto;
+  padding: $normal;
+
+  &__items {
+  }
+
+  &__item {
+    display: inline;
+    padding: $normal;
+    color: white;
+    font-family: Arial;
+
+    &_main {
+      color: bisque;
+    }
+  }
+}
+
+.content {
+  padding-top: 40px;
+}
+
+.block {
+  padding-bottom: 40px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  &__left-block {
+    background-color: coral;
+    padding: $normal;
+    color: white;
+  }
+
+  &__center-block {
+  }
+
+  &__right-block {
+    border: 1px solid coral;
+    padding: $normal;
+  }
+}
+.header-mobile{
+  display: none;
+}
+
+.advantages {
+
+  &__item {
+    padding: 5px;
+    font-family: "Andale Mono";
+
+    &_title {
+      text-align: left;
+    }
+  }
+}
+
+.title {
+  text-align: center;
+  font-family: "Arial Black";
+}
+
+.main-post {
+  &__subtitle {
+    font-size: 20px;
+    padding-top: 40px;
+    width: 50%;
+    margin-left: 25%;
+  }
+  &__title {
+    font-size: 45px;
+  }
+}
+.subtitle {
+  text-align: center;
+}
+
+.faq {
+  &__item {
+    padding: 5px;
+    font-family: "Andale Mono";
+  }
+}
+
+.banner {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__image {
+img{
+  width: 50%;
+  margin-left: 25%;
+}
+  }
+  &__description {
+    font-family: Monaco;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: coral;
+  }
+}
+.properties {
+  padding-top: 40px;
+  &__container {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+  &__title {
+    font-size: 45px;
+    font-family: "Andale Mono";
+    color: coral;
+  }
+  &__item {
+  }
+}
+
+.property {
+  background-color: coral;
+  padding: $normal;
+
+  &__title {
+    color: white;
+  }
+
+  &__subtitle {
+    font-family: "Andale Mono";
+  }
+
+  &__image {
+    font-size: 200px;
+    color: white;
+    font-family: "Andale Mono";
+    text-align: center;
+  }
+}
+
+.contacts {
+  width: 60%;
+  margin-left: 20%;
+
+  &__title {
+    font-size: 25px;
+    font-family: "Andale Mono";
+    text-align: left;
+    color: coral;
+  }
+}
+
+
+
+@media (max-width: 1000px) {
+  .main-post{
+    &__title{
+      font-size: 25px;
+    }
+    &__subtitle{
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .properties__container, .banner__container,.header{
+    display: block;
+  }
+  .header__center-block{
+    display: none;
+  }
+  .header-mobile{
+    display: block;
+    height: 100vh;
+    padding-top: 50%;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+}
